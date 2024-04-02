@@ -1,0 +1,145 @@
+/* Styling for the circle and arrow */
+.body {
+    background-color: #efefef;
+}
+
+:root {
+    color-scheme: light;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.box {
+    width: 1000px;
+    height: 520px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.box {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    cursor: pointer;
+    background-color: rgb(229, 255, 0);
+}
+
+.circle:nth-child(2) {
+    top: 153px;
+    background-color: blue;
+}
+
+.circle:nth-child(3) {
+    top: 265px;
+    background-color: green;
+}
+
+.circle:nth-child(4) {
+    top: 380px;
+    background-color: orange;
+}
+
+.arrow:nth-child(2) {
+    top: calc(150px + 0.5 * (100px - 8px));
+    right: calc(600px);
+}
+
+.arrow:nth-child(3) {
+    top: calc(265px + 0.5 * (100px - 8px));
+    right: calc(600px);
+}
+
+.arrow:nth-child(4) {
+    top: calc(380px + 0.5 * (100px - 8px));
+    right: calc(600px);
+}
+
+.arrow {
+    position: absolute;
+    top: calc(40px + 0.5 * (100px - 8px));
+    right: calc(600px);
+}
+
+.arrow span {
+    width: 10px;
+    height: 8px;
+    content: "\21E6";
+    background-color: black;
+    color: red;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.button-30 {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono", monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding: 0 20px;
+    position: absolute;
+    /* Change position to absolute */
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s, transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow, transform;
+    font-size: 18px;
+    right: 265px;
+    bottom: 20px;
+}
+
+.button-30:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+.button-30:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
